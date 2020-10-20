@@ -188,7 +188,7 @@ a i {
         if (is_dir ($thedir)){
         $scanarray = scandir ($thedir);
         for ($i = 0; $i < count ($scanarray); $i++){
-            if ($scanarray[$i] != "." && $scanarray[$i] != ".." && $scanarray[$i] != basename(__FILE__) && $scanarray[$i] != "explorer.inc.php" && substr( $scanarray[$i], 0, 3 ) != ".ht"){ // <- hide files
+            if ($scanarray[$i] != "." && $scanarray[$i] != ".." && $scanarray[$i] != basename($_SERVER["SCRIPT_FILENAME"]) && $scanarray[$i] != "explorer.inc.php" && substr( $scanarray[$i], 0, 3 ) != ".ht"){ // <- hide files
                 if(is_dir($scanarray[$i])){
                     echo '<a href="' . $scanarray[$i] . '/"><i class="material-icons icon-sm folder">&#xe2c7;</i>&nbsp;<span>' .  $scanarray[$i] . '</span>/</a>';
                 }else{
