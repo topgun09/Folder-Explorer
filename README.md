@@ -1,4 +1,4 @@
 # Folder-Explorer
-PHP directory explorer that replaces the default one in your webserver
+PHP directory explorer thing
 
 ![alt text](https://bunnbunsandben.github.io/stuff/project-images/explorer-screenshot-1.png)
